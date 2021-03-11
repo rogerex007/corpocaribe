@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/styles/main.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <title>Corpo Caribe</title>
+</head>
+
+<body>
+    <header>
+        <div class="page-header">
+            <div class="logo">
+                <img src="public/img/logo.png" alt="asdasdasd" loading="lazy">
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fi-xnsuxl-three-bars-solid" style="color:#fff; font-size:28px;"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-lg">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">INICIO
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/tecnicos.html">PROGRAMAS TÉCNICOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/diplomados.html">DIPLOMADOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#planes">¿QUIENES SOMOS?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">UBICACIÓN Y CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="home">
+            <img src="public/img/1.jpg" alt="" class="img-fluid" loading="lazy">
+            <div class="cap"></div>
+            <a href="pages/tecnicos.html">
+                <div class="tec card">
+                    <div class="card-body">
+                        <p>
+                            Cursos <br>
+                            <strong>Tecnicos</strong>
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <div class="dp card">
+                <a href="pages/diplomados.html">
+                    <div class="card-body">
+                        <p>
+                            Diplomados, cursos <br>
+                            <strong>Seminarios y talleres</strong>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="https://api.whatsapp.com/send?phone=+573004859121" class="btn-wsp" target="_blank">
+            <i class="fi-xnsuxl-whatsapp" loading="lazy"></i>
+        </a>
+
+        <section>
+            <div class="pie">
+                <div style="background-color: rgba(37, 36, 102, 0.602); color:white;">
+                    <div class="container">
+
+                        <!-- Grid row-->
+                        <div class="row py-4 d-flex align-items-center">
+
+                            <!-- Grid column -->
+                            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                                <h6 class="mb-0">Siguenos en nuestras redes sociales!</h6>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                                <!-- Facebook -->
+                                <a class="fb-ic">
+                                    <i class="fi-snsuxl-facebook"></i>
+                                </a>
+                                <!--Linkedin -->
+                                <a class="li-ic">
+                                    <span class="icon-linkedin3"></span>
+                                </a>
+                                <!--Instagram-->
+                                <a class="ins-ic">
+                                    <i class="fi-xnsuxl-instagram"></i>
+                                </a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row-->
+
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="container text-center text-md-left mt-5">
+
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                            <!-- Content -->
+                            <h6 class="text-uppercase font-weight-bold">Desarrollador</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p>
+                                Desarrollado y implementado por: <a href="https://www.instagram.com/rocketsite.dev/"
+                                    target="_blank">RocketSite</a>
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-center text-uppercase font-weight-bold">Ubicación</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <div class="container-fluid p-0 pb-3">
+                                <div class="map" id="mapid"></div>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                            <!-- Links -->
+                            <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p>
+                                <i class="fi-xnsuxl-house-solid"></i> Sincelejo, Calle 14 #45-36, COL
+                            </p>
+                            <p>
+                                <i class="fi-xwsuxl-envelope-solid"></i> contacto@corpocaribe.edu.co
+                            </p>
+                            <p>
+                                <i class="fi-xnsrxl-phone-solid"></i> + 57 3004859121
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </div>
+                <!-- Footer Links -->
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3" style="background-color: rgba(37, 36, 102, 0.602);">©
+                    <script>document.write(new Date().getFullYear());</script>
+                    All Right:
+                    <a href="#"> Corpo Caribe</a>
+                </div>
+            </div>
+        </section>
+        <!-- Copyright -->
+
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+        <script src="public/js/map.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162796740-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-162796740-1');
+        </script>
+    </footer>
+</body>
+
+</html>
