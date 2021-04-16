@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 .navbar{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -182,7 +199,140 @@
     
 }
 
+@media(max-width: 500px){
+    .dp-img {
+        width: 100%;
+        height: 100px;
+    }
+    .cs-img {
+        width: 100%;
+        height: 100px;
+    }
+}
 
+.dp-section .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.dp-section .container .card{
+    width: 330px;
+    height: 120px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.dp-section .container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dp-section .container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.dp-section .container .card h4{
+    font-weight: 600;
+}
+
+
+
+
+
+.dp-section .c-container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.dp-section .c-container .card{
+    width: 330px;
+    height: 330px;
+    border-radius: 50px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.dp-section .c-container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dp-section .c-container .card img{
+    width: 330px;
+    height: 190px;
+}
+
+.dp-section .c-container .card h4{
+    font-weight: 600;
+}
+
+@media (max-width: 500px){
+    .dp-section .container{
+        width: 100%;
+        max-width: 1200px;
+        height: 430px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        padding-bottom: 1750px;
+    }
+    .dp-section .container .card h4{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .dp-section .c-container{
+        width: 100%;
+        max-width: 1200px;
+        height: 430px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        padding-bottom: 1700px;
+    }
+
+    .dp-section .c-container .card{
+        width: 330px;
+        height: 220px;
+        border-radius: 50px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.25s;
+    }
+
+    .dp-section .c-container .card h4{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .dp-section .c-container .card img{
+        width: 330px;
+        height: 100px;
+    }
+    
+
+}
   
 
 @media (max-width: 500px) {
@@ -197,6 +347,7 @@
         left: 50%;
     }
 }
+
 
 footer .btn-wsp {
     position: fixed;
@@ -235,81 +386,6 @@ footer .btn-wsp:hover {
     color: rgba(204, 16, 16, 0.534);
 }
 
-
-section .dp-title {
-    position: relative;
-    background-color: rgba(223, 26, 26, 0.753);  
-}
-
-section .dp-title .cap-lef {
-    position: absolute;
-    top: 50%;
-    width: 20%;
-    height: 20%;
-    transform: rotate(120deg);
-    background-color: #fff;
-}
-
-section .dp-title .cap-rigth {
-    position: absolute;
-    top: 50%;
-    width: 20%;
-    height: 20%;
-    left: 80%;
-    transform: rotate(-120deg);
-    background-color: #fff;
-}
-
-section .dp-list{
-    position: relative;
-    top: 60%;
-    bottom: 10%;
-    left: 20%;
-    right: 50%;
-    width: 70%;
-    font-size: 20px;
-}
-
-@media (max-width: 500px) {
-    section .dp-title {
-        position: relative;
-       
-    }
-    
-    section .dp-title h1{
-        position: relative;
-        font-size: 15px;
-      
-    }
-    
-    section .dp-title .cap-lef {
-        position: absolute;
-        top: 50%;
-        width: 20%;
-        height: 20%;
-        visibility: hidden;
-        background-color: #fff;
-    }
-    
-    section .dp-title .cap-rigth {
-        position: absolute;
-        top: 50%;
-        width: 20%;
-        height: 20%;
-        left: 80%;
-        visibility: hidden;
-        background-color: #fff;
-    }
-    section .dp-list{
-        position: relative;
-        top: 60%;
-        bottom: 10%;
-        left: 20%;
-        right: 50%;
-        width: 70%;
-        font-size: 13px;
-    }
-}
 
 
 
